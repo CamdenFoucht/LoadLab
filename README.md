@@ -1,8 +1,16 @@
 # LoadLab
-Pure CSS loaders
 
+<p>I'm creating a collection of pure CSS loaders as a side project. Some of these spinners are single elements loaders, while a couple use multiple elements.</p>
 
+<p>Follow these steps to use a loader in your own projects</p>
 
-Content will be pushed soon.
+<ol>
+  <li>Copy the HTML and CSS into your project.</li>
+   <li>Change the size of your loader by adjusting the height and width. (Must be equal)</li>
+   <li>Adjust the border colors to your liking.</li>
+   <li>Load away!</li>
+</ol>
 
-For now you can visit http://cfoucht.com/loadlab/
+<img alt="loadlab" src="./assets/loadlab-img.PNG"/>
+
+Visit http://cfoucht.com/loadlab
