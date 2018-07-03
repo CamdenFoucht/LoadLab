@@ -1,0 +1,48 @@
+.hm-spinner{
+  height: 115px;
+  width: 115px;
+  border: 6px solid transparent;
+  border-top-color: #9C27B0;
+  border-bottom-color: #9C27B0;
+  border-radius: 50%;
+  position: relative;
+  -webkit-animation: spin 3s linear infinite;
+          animation: spin 3s linear infinite;
+}
+
+.hm-spinner::before{
+  content: "";
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  bottom: 20px;
+  left: 20px;
+  border: 6px solid transparent;
+  border-top-color: #BA68C8;
+  border-bottom-color: #BA68C8;
+  border-radius: 50%;
+  -webkit-animation: spin 1.5s linear infinite;
+  animation: spin 1.5s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    from {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    from {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+}

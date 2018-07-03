@@ -1,0 +1,42 @@
+.dot-loader{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #03A9F4;
+    position: relative;
+    -webkit-animation: 1.2s scaleDown ease-in-out infinite ;
+    animation: 1.2s scaleDown ease-in-out infinite ;
+}
+
+.dot-loader:nth-child(2){
+    margin: 0 15px;
+    -webkit-animation: 1.2s scaleDown ease-in-out infinite .15555s;
+    animation: 1.2s scaleDown ease-in-out infinite .15555s;
+}
+
+.dot-loader:nth-child(3){
+    -webkit-animation: 1.2s scaleDown ease-in-out infinite .300000s;
+    animation: 1.2s scaleDown ease-in-out infinite .300000s;
+}
+
+@-webkit-keyframes scaleDown{
+    0%, 80%, 100%{
+      -webkit-transform: scale(0);
+              transform: scale(0);
+    }
+    40%{
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+}
+
+@keyframes scaleDown{
+    0%, 80%, 100%{
+      -webkit-transform: scale(0);
+              transform: scale(0);
+    }
+    40%{
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+}

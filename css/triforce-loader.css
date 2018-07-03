@@ -1,0 +1,56 @@
+.triforce-container {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    margin: 120px auto;
+  }
+  .triforce,
+  .triforce::before,
+  .triforce::after {
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 50px solid #ceb502;
+    position: relative;
+    -webkit-animation: 3s triforce linear infinite 2s both;
+            animation: 3s triforce linear infinite 2s both;
+    top: 50px;
+  }
+  
+  .triforce::before,
+  .triforce::after {
+    content: "";
+    position: absolute;
+  }
+  
+  .triforce::before {
+    left: 25px;
+    top: 0;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+  }
+  
+  .triforce::after {
+    top: -50px;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+  }
+  
+  @-webkit-keyframes triforce {
+      0%, 40%, 100% {
+        border-bottom-color: rgb(206, 181, 2);
+      }
+      40% {
+        border-bottom-color: rgba(206, 181, 2, 0);
+      }
+    }
+  
+  @keyframes triforce {
+      0%, 40%, 100% {
+        border-bottom-color: rgb(206, 181, 2);
+      }
+      40% {
+        border-bottom-color: rgba(206, 181, 2, 0);
+      }
+    }
